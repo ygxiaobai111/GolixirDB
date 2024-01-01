@@ -1,0 +1,23 @@
+server:
+  bind: 0.0.0.0
+  #端口号
+  port: 14332
+  #开启多少个数据库
+  databases: 16
+  #追加形式
+  appendOnly: true
+  # aof落盘文件名
+  appendFilename: appendonly.aof
+  #是否启动集群
+  clusterMode: false
+  #本节点地址
+  self: 127.0.0.1:14332
+  peers:
+    - 127.0.0.1:14333
+
+
+
+
+
+
+
